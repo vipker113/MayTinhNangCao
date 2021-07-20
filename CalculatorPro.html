@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CalculatorPro.css">
+    <title>Calculator</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="icon" id="icon" onclick="history()"><i class="historyicon" id="icon">history</i></div>
+        <div class="historyouter" id="history" style="display: none;">
+            <div class="historyinner" id="historyinner"> 
+            </div>
+        </div>
+        <div class="outputbox">
+            <div class="resultbox">
+                <span id="answer">
+                </span>
+            </div>
+            <div class="inputbox">
+                <input style="border: none;" id="view" type="text">
+            </div>
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <div class="btn">
+                        <div class="char operator" onclick="btnclk(this.textContent)">(</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="btn">
+                        <div class="char operator" onclick="btnclk(this.textContent)">)</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="btn">
+                        <div class="char operator" onclick="btnclk(this.textContent)">%</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="btn">
+                        <button class="char operator" id="clear" onclick="xoa();">AC</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="btn">
+                        <button class="char number" value ="7" onclick="inputValue(this.value)">7</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="btn">
+                        <button class="char number" value ="8" onclick="inputValue(this.value)">8</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="btn">
+                        <button class="char number" value ="9"  onclick="inputValue(this.value)">9</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="btn">
+                        <button class="char operator" value ="/" onclick="inputValue(this.value)">÷</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="btn">
+                        <button class="char number" value ="4" onclick="inputValue(this.value)">4</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="btn">
+                        <button class="char number"value ="5" onclick="inputValue(this.value)">5</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="btn">
+                        <button class="char number" value ="6" onclick="inputValue(this.value)">6</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="btn">
+                        <button class="char operator" value ="*" onclick="inputValue(this.value)">×</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="btn">
+                        <button class="char number" value ="1" onclick="inputValue(this.value)">1</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="btn">
+                        <button class="char number" value ="2" onclick="inputValue(this.value)">2</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="btn">
+                        <button class="char number" value ="3" onclick="inputValue(this.value)">3</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="btn">
+                        <button class="char operator" value ="-" onclick="inputValue(this.value)">-</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="btn">
+                        <button class="char number" value ="0" onclick="inputValue(this.value)">0</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="btn">
+                        <div class="char operator" onclick="btnclk(this.textContent)">.</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="btn">
+                        <button class="char equal" onclick="result();">=</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="btn">
+                        <button class="char operator" value ="+" onclick="inputValue(this.value)">+</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="CalculatorPro.js"></script>
+</body>
+
+</html
